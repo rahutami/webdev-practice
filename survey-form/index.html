@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <nav class="navbar navbar-expand-lg">
+        <div class="navbar-brand">
+            <a class="thebrand" href="#">
+                <span class="tami-survey-form">Tami: Survey Form</span>
+                <br>
+                <span class="wundersmith">wundersmith.herokuapp.com</span>
+            </a>
+            <button type="button" class="btn follow-btn">+ Follow </button>
+        </div>
+        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Sign Up <i class="fas fa-user-plus"></i></a></li>
+            <li><a href="#">Log In <i class="fas fa-user"></i></a></li>
+          </ul>
+      </nav> -->
+
+      <div class="container">
+          <div class="title">
+            <h1>Tami Survey Form</h1>
+            <h3>Thank you for taking the time to help us improve the platform</h3>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 col-sm-12">
+                <form action="">
+              <p>
+                <label for="#name">Name</label><br>
+                <input type="text" placeholder="Enter your name" id="name">
+              </p>
+              <p>
+                <label for="#email">Email</label><br>
+                <input type="email" placeholder="Enter Your Email" id="email">
+              </p>
+              <p>
+                <label for="#age">Age (optional)</label><br>
+                <input type="text" placeholder="Enter your age" id="age">
+              </p>
+              <p>
+                <label for="#role">Which option best describes your current role?
+                    <br>
+                    <select name="role" id="role">
+                        <option value="" disabled selected>Select Your Current Role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="secret">Prefer Not To Say</option>
+                        <option value="other">Other</option>
+                      </select>
+              </p>
+              <p>
+                Would you recommend wundersmith to a friend?
+                    <br>
+                    <input type="radio" name="recommend" id="definitely" value="DEFINITELY">
+                    <label for="#definitely">Definitely</label>
+                    <br>
+                    <input type="radio" name="recommend" id="maybe" value="MAYBE">
+                    <label for="#maybe">Maybe</label>
+                    <br>
+                    <input type="radio" name="recommend" id="notsure" value="NOTSURE">
+                    <label for="#notsure">Not Sure</label>
+              </p>
+
+              <p>
+                <label for="#favorite">Would you recommend freeCodeCamp to a friend?
+                    <br>
+                    <select name="favorite" id="favorite">
+                        <option value="" disabled selected>Select an Option</option>
+                        <option value="Challenges">Challenges</option>
+                        <option value="Projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="opensource">Open Source</option>
+                      </select>
+              </p>
+
+              <p>
+                  <input type="checkbox" name="frontend" id="frontend" value="FRONTEND">
+                  <label for="#frontend">Front-end Projects</label>
+                  <br>
+                  <input type="checkbox" name="backend" id="backend" value="BACKEND">
+                  <label for="#backend">Back-end Projects</label>
+                  <br>
+                </p>
+                <p>
+                    <label for="#comments">Any comments or suggestions?
+                    <br>
+                    <textarea name="comments" id="comments"></textarea>
+                </p>
+
+                <button class="btn">Submit</button>
+          </form>
+          <div class="col-md-2">
+
+          </div>
+            </div>
+          </div>
+          
+      </div>
+</body>
+</html>

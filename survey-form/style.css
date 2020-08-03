@@ -1,0 +1,86 @@
+*{
+    font-family: Lato;
+}
+
+body{
+    background-image: url("bg-pic.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.wundersmith{
+    font-size: 15px;
+}
+
+.tami-survey-form{
+    font-weight: 700;
+}
+
+.navbar-brand{
+    line-height: 25px;
+}
+
+.navbar{
+    background-color: rgb(14, 14, 37);
+    color: white;
+}
+
+.thebrand{
+    color: white;
+}
+
+.thebrand:hover{
+    color: rgb(189, 189, 170);
+}
+
+.follow-btn{
+    background-color: rgb(165, 165, 165, 0.8);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0 3px;
+    padding-right: 5px;
+    border-radius: 0;
+    font-style: inherit;
+    border-radius: 2px;
+}
+
+.follow-btn:hover{
+    background-color: rgb(71, 207, 115);
+    color: black;
+}
+
+.title{
+    text-align: center;
+    margin-top: 5%;
+    
+    text-shadow: 2px 2px 8px #000000;
+}
+
+.title h3{
+    font-style: italic;
+    font-weight: 100;
+}
+
+form{
+    background-color: black;
+    color: white;
+    padding: 50px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+input[type=text], select, input[type=email]{
+    width: 100%;
+    height: 35px;
+}
+
+textarea{
+    width: 100%;
+}
+
+.btn{
+    background-color: white;
+    color: black;
+    width: 100%;
+}
