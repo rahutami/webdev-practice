@@ -1,0 +1,89 @@
+#player-name{
+    width: 900px;
+}
+
+body{
+    margin: 5px;
+}
+
+#player-2{
+    text-align: right;
+}
+
+.center {
+    margin: auto;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+#tic-tac-toe{
+    text-align: center;
+    width: 450px;
+    height: 450px;
+    border: none;
+}
+
+button{
+    width: 150px;
+    height: 150px;
+    background-color: #e2e2e2;
+    font-size: 100px;
+    padding: auto;
+    border: none;
+}
+
+#box-two, #box-eight{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+#box-four, #box-six{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#box-five{
+    border: 1px solid black;
+}
+
+#box-one, #box-two, #box-three{
+    border-top: 1px solid black;
+}
+
+#box-one, #box-four, #box-seven{
+    border-left: 1px solid black;
+}
+
+#box-seven, #box-eight, #box-nine{
+    border-bottom: 1px solid black;
+}
+
+#box-three, #box-six, #box-nine{
+    border-right: 1px solid black;
+}
+
+.o{
+    color: rgb(0, 0, 75);
+}
+
+.x{
+    color: rgb(85, 0, 0);
+}
+
+#player-turn{
+    text-align: center;
+}
+
+#reset-btn{
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    color: white;
+    background-color: green;
+}
+
+.text-center{
+    text-align: center;
+}
