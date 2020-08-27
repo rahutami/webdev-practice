@@ -41,3 +41,7 @@ button{
 .win{
     color: #2a9d8f;
 }
+
+input{
+    border: none;
+}
