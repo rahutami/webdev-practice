@@ -52,9 +52,9 @@ function resetBoard(e){
 // Function called when the "Player 1" button is clicked
 function addScoreOne(e){
     e.preventDefault();
-    if(p1Score<maxScore & p2Score<maxScore){
+    if(p1Score<maxScore && p2Score<maxScore){
         displayedP1Score.innerHTML='<h1>'+(++p1Score)+'</h1>';
-        if(p1Score==maxScore){
+        if(p1Score===maxScore){
             displayedP1Score.classList.add('win');
             getTo.innerHTML=p1Name+" won!";
         }
@@ -66,7 +66,7 @@ function addScoreTwo(e){
     e.preventDefault();
     if(p1Score<maxScore && p2Score<maxScore){
         displayedP2Score.innerHTML='<h1>'+(++p2Score)+'</h1>';
-        if(p2Score==maxScore){
+        if(p2Score===maxScore){
             displayedP2Score.classList.add('win');
             getTo.innerHTML=p2Name+" won!";
         }
@@ -86,10 +86,10 @@ function changeNames(event){
     p2Name = document.getElementById('p2-new-name').value;
 
     // In case player only insert one player name
-    if (p1Name == ""){
+    if (p1Name === ""){
         p1Name = 'Player 1';
     }
-    if (p2Name == ""){
+    if (p2Name === ""){
         p2Name = 'Player 2';
     }
 
@@ -106,7 +106,7 @@ function changeNames(event){
 // Function called when change score button clicked
 function changeMaxScore(e){
     e.preventDefault();
-    maxScore= document.getElementById('score-to-win').value;
+    maxScore= Number(document.getElementById('score-to-win').value);
     getTo.innerHTML="Get to "+maxScore+" to win!";
 
 }
