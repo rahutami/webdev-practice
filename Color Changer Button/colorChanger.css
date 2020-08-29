@@ -9,10 +9,19 @@
 }
 
 .center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
+    width: 50%;
+    margin: auto;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #e0e0e0;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.code{
+    margin-top: 10%;
+}

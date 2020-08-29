@@ -40,12 +40,12 @@ changeScore.addEventListener('submit', changeMaxScore);
 function resetBoard(e){
     e.preventDefault();
     p1Score = 0;
-    displayedP1Score.innerHTML='<h1>'+(p1Score)+'</h1>';
+    displayedP1Score.innerHTML=`<h1>${p1Score}</h1>`;
     p2Score = 0;
-    displayedP2Score.innerHTML='<h1>'+(p2Score)+'</h1>';
+    displayedP2Score.innerHTML=`<h1>${p1Score}</h1>`;
     displayedP1Score.classList.remove('win');
     displayedP2Score.classList.remove('win');
-    getTo.innerHTML="Get to "+maxScore+" to win!";
+    getTo.innerHTML=`Get to ${maxScore} to win!`;
 
 }
 
@@ -53,10 +53,10 @@ function resetBoard(e){
 function addScoreOne(e){
     e.preventDefault();
     if(p1Score<maxScore && p2Score<maxScore){
-        displayedP1Score.innerHTML='<h1>'+(++p1Score)+'</h1>';
+        displayedP1Score.innerHTML=`<h1>${++p1Score}</h1>`;
         if(p1Score===maxScore){
             displayedP1Score.classList.add('win');
-            getTo.innerHTML=p1Name+" won!";
+            getTo.innerHTML = `${p1Name} won!`;
         }
     }
 }
@@ -65,10 +65,10 @@ function addScoreOne(e){
 function addScoreTwo(e){
     e.preventDefault();
     if(p1Score<maxScore && p2Score<maxScore){
-        displayedP2Score.innerHTML='<h1>'+(++p2Score)+'</h1>';
+        displayedP2Score.innerHTML=`<h1>${++p2Score}</h1>`;
         if(p2Score===maxScore){
             displayedP2Score.classList.add('win');
-            getTo.innerHTML=p2Name+" won!";
+            getTo.innerHTML = `${p2Name} won!`;
         }
     }
 }
@@ -98,8 +98,8 @@ function changeNames(event){
     p2NameHolder.innerHTML=p2Name;
 
 
-    p1Button.innerHTML = '<button>'+p1Name+'</button>';
-    p2Button.innerHTML = '<button>'+p2Name+'</button>';
+    p1Button.innerHTML = `<button>${p1Name}</button>`;
+    p2Button.innerHTML = `<button>${p2Name}</button>`;
 
 }
 
@@ -107,6 +107,6 @@ function changeNames(event){
 function changeMaxScore(e){
     e.preventDefault();
     maxScore= Number(document.getElementById('score-to-win').value);
-    getTo.innerHTML="Get to "+maxScore+" to win!";
-
+    getTo.innerHTML=`Get to ${maxScore} to win!`;
+    resetBoard(e);
 }

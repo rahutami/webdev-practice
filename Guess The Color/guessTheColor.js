@@ -17,7 +17,7 @@ for(let i=0; i<boxes.length; i++){
 
 function generateNewCode(){
 
-    ansCode = 'rgb('+randomColor()+','+randomColor()+','+randomColor()+')';
+    ansCode = `rgb(${randomColor()},${randomColor()},${randomColor()})`;
     rgbCode.innerHTML=ansCode;
     ansChoice = Number(Math.floor(Math.random()*6));
     correctness.style.color='#a5d6e4';
@@ -28,6 +28,8 @@ function generateNewCode(){
         boxes[i].classList.remove('correct-ans');
 
     }
+
+    console.log(ansCode);
 }
 
 function randomColor(){
@@ -38,7 +40,7 @@ function changeColor(box, index){
     if(index===ansChoice){
         box.style.background = ansCode;
     } else {
-        box.style.background = 'rgb('+randomColor()+','+randomColor()+','+randomColor()+')';
+        box.style.background = `rgb(${randomColor()},${randomColor()},${randomColor()})`;
     }
 }
 

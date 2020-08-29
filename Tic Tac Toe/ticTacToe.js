@@ -8,6 +8,10 @@ let playerTwo = document.getElementById('player-2')
 console.log(playerOne);
 console.log(playerTwo);
 
+// Select Box
+const boxes = document.querySelectorAll('button.box');
+console.log(boxes);
+
 playerOne.innerHTML=playerOneName;
 playerTwo.innerHTML=playerTwoName;
 
@@ -23,16 +27,6 @@ turn.innerHTML=playerOneName + "'s turn!";
 let ticTacToe = document.getElementById('tic-tac-toe');
 
 let resetBtn = document.getElementById('reset-btn');
-
-let boxOne = document.getElementById('box-one');
-let boxTwo = document.getElementById('box-two');
-let boxThree = document.getElementById('box-three');
-let boxFour = document.getElementById('box-four');
-let boxFive = document.getElementById('box-five');
-let boxSix = document.getElementById('box-six');
-let boxSeven = document.getElementById('box-seven');
-let boxEight = document.getElementById('box-eight');
-let boxNine = document.getElementById('box-nine');
 
 // let winner;
 
@@ -59,18 +53,20 @@ resetBtn.addEventListener('click',resetBoard);
 function newMove(e){
     let buttonClicked = e.target;
 
+    if(!buttonClicked.classList.contains('box')) return;
+
     // Player one clicked: Display red 'X'
     if(isPlayerOneTurn && !buttonClicked.classList.contains('clicked')){
         buttonClicked.classList.add('x','clicked');
         buttonClicked.innerHTML='X';
-        turn.innerHTML=playerTwoName + "'s turn!";
+        turn.innerHTML = `${playerTwoName}'s turn!`;
     } 
     
     // Player two clicked: Display blue 'O'
     else if (!buttonClicked.classList.contains('clicked')){
         buttonClicked.classList.add('o','clicked');
-        buttonClicked.innerHTML='O';
-        turn.innerHTML=playerOneName + "'s turn!";
+        buttonClicked.innerHTML = 'O';
+        turn.innerHTML = `${playerOneName}'s turn!`;
     }
     console.log(buttonClicked);
 
@@ -80,22 +76,8 @@ function newMove(e){
 
 // Remove all the classes added and innerHtml of each boxes
 function resetBoard(){
-    boxOne.innerHTML='';
-    boxOne.classList.remove('o','x','clicked');
-    boxTwo.innerHTML='';
-    boxTwo.classList.remove('o','x','clicked');
-    boxThree.innerHTML='';
-    boxThree.classList.remove('o','x','clicked');
-    boxFour.innerHTML='';
-    boxFour.classList.remove('o','x','clicked');
-    boxFive.innerHTML='';
-    boxFive.classList.remove('o','x','clicked');
-    boxSix.innerHTML='';
-    boxSix.classList.remove('o','x','clicked');
-    boxSeven.innerHTML='';
-    boxSeven.classList.remove('o','x','clicked');
-    boxEight.innerHTML='';
-    boxEight.classList.remove('o','x','clicked');
-    boxNine.innerHTML='';
-    boxNine.classList.remove('o','x','clicked');
+    for (let i = 0; i<boxes.length; i++){
+        boxes[i].innerHTML = '';
+        boxes[i].classList.remove('o','x','clicked');
+    }
 }
