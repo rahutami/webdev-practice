@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center">
+        <div class="container">
+            <form id="form" class="form">
+                <h2 style="text-align: center;">Register With Us</h2>
+
+                <br>
+
+                <div class="input-set">   
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" class="form-control" placeholder="Username">
+                    <small>Error Message</small>
+                </div>
+
+                <div class="input-set">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" class="form-control" placeholder="Email">
+                    <small>Error Message</small>
+                </div>
+
+                <div class="input-set">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                    <small>Error Message</small>
+                </div>
+                
+                <div class="input-set">
+                    <label for="confirm">Confirm Password</label>
+                    <input type="password" name="confirm" id="confirm" class="form-control" placeholder="Confirm Password">
+                    <small>Error Message</small>
+                </div>
+                
+                <button class="btn btn-info">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
