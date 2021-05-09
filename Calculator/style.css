@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.calculator{
+    width: fit-content;
+    background-color: black;
+    padding: 5px;
+}
+
+.screen{
+    background-color:white;
+    color: black;
+    height: 100px;
+}
+
+.sec-screen{
+    height: 20px;
+    background-color: grey;
+    margin-bottom: 10px;
+}
+
+.row{
+    display: flex;
+}
+
+.btn, .not-btn{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: rgb(77, 77, 77);
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.not-btn{
+    visibility: hidden;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(131, 131, 131);
+}
+
+.green{
+    color: rgb(101, 241, 97);
+}
+
+.clear{
+    color: rgb(252, 94, 46);
+}
+
+.equal{
+    background-color: rgb(52, 153, 57);
+}
+.equal:hover{
+    background-color:  rgb(84, 192, 89);
+}
+.plusmin{
+    font-size: 20px;
+}
